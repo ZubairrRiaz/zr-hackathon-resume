@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="resume.css">
+</head>
+<body>
+   <div class="resume-box">
+
+        <div class="first-column-line-box gap">
+            <div class="user-pic">
+               <img src="" alt="Image Not Select" id="img">
+           </div>
+
+          <div class="education-info gap">
+            <div class="content-center">
+            <h3><u>Education;</u></h3>
+            <ul>
+              <h4>School/ College/ university;</h4>
+              <li id="school-name">---------------</li>
+              <br>
+              <li id="education"></li>
+              <br>
+              <h4>City;</h4>
+              <li id="city-name"></li>
+            </ul>
+            </div>
+        </div>
+
+            <div class="contact-info gap">
+              <div class="content-center">
+              <h3><u>Contact;</u></h3>
+              
+              <ul>
+                <h4>Phone Number;</h4>
+                <li id="phone-number"></li>
+                <br>
+                <h4>Email:</h4>
+                <li id="email"></li>
+                <br>
+                <h4>LinkedIn;</h4>
+                <li id="linkedin"></li>
+              </ul>
+            </div>
+          </div>
+       </div>
+
+       <div class="second-column-line-box">
+            <div class="user-heading gap">
+              <h1 id="NAME"></h1>
+              <h5 id="profession"></h5>
+
+              <div class="About">
+               <h3>About Me:</h3>
+               <p id="about"></p>
+            </div>
+       </div>
+          
+
+           <div class="information gap">
+            <div class="content-center">
+            <h2><u>Information</u>;</h2>
+            <br>
+            <ul>
+              <h3>Name:</h3>
+              <li id="NAME"></li>
+              <br>
+              <h3>Father Name:</h3>
+              <li id="fathername"></li>
+              <br>
+              <h3>Age:</h3>
+              <li id="age"></li>
+              <br>
+              <h3>Country:</h3>
+              <li id="country"></li>
+              <br>
+              <h3>Address</h3>
+              <li id="address"></li>
+            </ul>
+            </div>
+          </div>
+
+          <div class="skill gap">
+            <div class="content-center">
+            <h2><u>Skills;</u></h2>
+            <ul>
+              <li id="skills"></li>
+            </ul>
+            <br>
+            <h3><u>Acheivments;</u><h3>
+            <h4 id="acheivements"></h4>
+          </div>
+       </div>
+
+       <button id="Edit">Edit Resume</button>
+       <button id="download">Download</button>
+       <button id="share">Share</button>
+
+
+       </div>
+
+    </div>
+
+      <form>
+        <div class="submission-form">
+
+          <h1>Resume Form</h1>
+
+      <div>
+        <label for="name">Full Name</label>
+        <br>
+        <input type="text" id="name" onchange="changeText1(event)">
+      </div>
+      
+      <div>
+        <label for="f-name">Father Name</label>
+        <br>
+        <input type="text" id="f-name" onchange="changeText2(event)">
+      </div>
+
+      <div>
+        <label for="prof">Profession</label>
+        <br>
+        <input type="text" id="prof" onchange="changeText3(event)">
+      </div>
+
+      <div>
+        <label for="About">About You</label>
+        <br>
+        <textarea name="about" id="About" rows="2" onchange="changeText4(event)"></textarea>
+      </div>
+
+      <div>
+        <label for="image">Select a file</label>
+        <br>
+        <input type="file" accept="image.png, image.jpg, image.jpeg" id="image" onchange="changeText5(event)">
+      </div>
+
+
+      <div>
+        <label for="education">Education</label>
+        <br>
+        <input type="text" id="education" placeholder=" Matric or inter or B.com etc." onchange="changeText6(event)">
+      </div>
+
+      <div>
+        <label for="s-c-u-name">School / College / University</label>
+        <br>
+        <input type="text" id="s-c-u-name" onchange="changeText7(event)">
+      </div>
+
+      <div>
+        <label for="address">Address</label>
+        <br>
+        <input type="text" id="address" onchange="changeText8(event)">
+      </div>
+
+      <div>
+        <label for="Country">Country</label>
+        <br>
+        <input type="text" id="Country" onchange="changeText9(event)">
+      </div>
+
+      <div>
+        <label for="city">City</label>
+        <br>
+        <input type="text" id="city" onchange="changeText10(event)">
+      </div>
+
+      <div>
+        <label for="age">Age</label>
+        <br>
+        <input type="text" id="age" onchange="changeText11(event)">
+      </div>
+
+      <div>
+        <label for="contact">Phone No</label>
+        <br>
+        <input type="text" id="contact" onchange="changeText12(event)">
+      </div>
+
+      <div>
+        <label for="email">Email</label>
+        <br>
+        <input type="text" id="email" onchange="changeText13(event)">
+      </div>
+
+      <div>
+        <label for="linkedin">LinkedIn</label>
+        <br>
+        <input type="text" id="linkedin" onchange="changeText14(event)">
+      </div>
+
+      <div>
+        <label for="skills">Skills</label>
+        <br>
+        <input type="text" id="skills" placeholder="You Can Write Multiple Skills" col = 5 onchange="changeText15(event)">
+      </div>
+
+      <div>
+        <label for="acheive">Acheivements</label>
+        <br>
+        <textarea name="acheive" id="acheive" rows="2" onchange="changeText16(event)"></textarea>
+      </div>
+
+      <button id="button">Create Resume</button>
+       </div>
+
+    </form>
+
+   <script src="resume.js"></script>
+   
+</body>
+</html>
